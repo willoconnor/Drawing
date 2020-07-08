@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hard Words</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+
+        }
+
+        button {
+            font-family: "helvetica", sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: white;
+            background-color: #0099cc;
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 8px;
+            border: 0px solid dimgrey;
+            outline: none;
+            box-shadow: 0 3px #007299;
+            z-index: 1000;
+        }
+        button:active {
+            background-color: #33a6cc;
+            box-shadow: none;
+            transform: translateY(3px);
+            z-index: 1000;
+        }
+
+        p {
+            font-size: 30px;
+            font-family: Papyrus, sans-serif;
+            color: black;
+            padding: 100px;
+
+        }
+
+
+    </style>
+</head>
+<body onload="hard()">
+
+<p id = "hard_run">
+</p>
+
+<h2>
+    <button id = "button" onclick = "hard()">
+        WORD
+    </button>
+</h2>
+
+<script>
+    var down = document.getElementById('hard_run');
+
+    var arr = [
+        "Bride", "Chin", "Spatula", "Brick", "Dolphin", "Rocking Horse",
+        "Harp", "Parking Lot", "Drinking Straw", "Teapot", "Fishing Pole",
+        "Seesaw", "Clown", "Windmill", "Wheelbarrow", "Lobster", "Fence",
+        "Acorn","Stonehenge","Eggplant","Scale","Cactus","River","Cyclops",
+        "Crab","Birdhouse","Matches","Soup","Rhinoceros","Boots","Olive",
+        "Guitar","Wave","Hula Hoop","Eyelash","Screw","Cellphone",
+        "Baby","Trumpet","Monkey","Hairbrush","Corn","Rake",
+        "Hockey Puck","Vest","Pen","Airport","Stove","Eiffel Tower",
+        "Scarf","Mailbox","Milk","Treehouse","Sofa","Crown",
+        "Bottle","Onion","Igloo","Spider Web","Screwdriver","Chicken",
+        "Pickle","Backpack","Whale","Tree Trunk","Hamburger","Stamp",
+        "Stapler","Earring","Sandwich","Butter","Pearl","Lipstick",
+        "The Big Dipper","Billiard Ball","Tyrannosaurus Rex","Helicopter",
+        "Spoon","Driveway","Drum","Rose","Buckle","Pear",
+        "Lion","Tennis Racket","Fountain","Freckles","Skis","Computer",
+        "Purse","Wrench","Vase","High Heels","Necklace","Ghost",
+        "Skull","Seahorse","Strawberry","Crane","Giraffe","Space Alien",
+        "Tornado","Hose","Penguin","Camera","Waffle","Needle",
+        "Elephant","Snail","Surfboard","Faucet","Tulip","Barn",
+        "Bacon","Pickup Truck","Toothpaste","Refrigerator","Boomerang",
+        "Ocean", "Glove", "Sock", "Hubcap", "Watermelon","Robot",
+        "Zipper","Paintbrush","Motorcycle","Jack-O-Lantern",
+        "Suspension Bridge","Bear","Spaghetti","Diving Board",
+        "Rocking Chair","Bracelet","Paperclip","Parachute","King",
+        "Swiss Cheese","Fireplace","Seashell","Cigarette","Pirate",
+        "Pocket","Bathtub","Turtle","Headlight","Spider","Dress",
+        "Piano","Roller Coaster","Root","Bubbles","Peanut","Letter",
+        "Flashlight","Shoulder","Shovel","Compact Disc","Popcorn",
+        "Bed","Unicycle","Helmet","Scissors","Castle","Telephone",
+        "Angel","Suitcase",
+
+    ];
+
+
+    function hard() {
+        down.innerHTML =
+            arr[Math.floor(Math.random() * arr.length)];
+    }
+</script>
+</body>
+</html>

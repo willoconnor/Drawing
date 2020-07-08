@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Easy Words</title>
+
+    <style>
+        body{
+            text-align: center;
+        }
+        h1{
+
+        }
+
+        button {
+            font-family: "helvetica", sans-serif;
+            font-size: 20px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: white;
+            background-color: #0099cc;
+            text-align: center;
+            padding: 14px 20px;
+            border-radius: 8px;
+            border: 0px solid dimgrey;
+            outline: none;
+            box-shadow: 0 3px #007299;
+            z-index: 1000;
+        }
+        button:active {
+            background-color: #33a6cc;
+            box-shadow: none;
+            transform: translateY(3px);
+            z-index: 1000;
+        }
+
+        p {
+            font-size: 30px;
+            font-family: "Comic Sans MS", sans-serif;
+            color: black;
+            padding: 100px;
+
+        }
+
+
+    </style>
+</head>
+<body onload="easy()">
+
+<p id = "easy_run">
+</p>
+
+<h2>
+    <button id = "button" onclick = "easy()">
+        WORD
+    </button>
+</h2>
+
+<script>
+    var down = document.getElementById('easy_run');
+
+    var arr = [
+        "Thumb","Ladybug","Bowl","Pizza","Balloon","Shorts",
+        "Smile","Ant","Remote Control","Lamp","Key","Volcano",
+        "Belt","Mug","Dice","Cherry","Hat","Tail",
+        "Sailboat","Padlock","Hammer","Handcuffs","Fan","Skateboard",
+        "Chain","Coathanger","Bell","Spaceship","Hair","Cookie",
+        "Rabbit","Broom","Mountain","Hot Dog","Train","Eye",
+        "Carrot","Octopus","Bat","Zebra","Sunset","Sword",
+        "Cow","Rainbow","Bus","Mouse","House","Tree",
+        "Shoe","Book","Lips","Television","Domino","Ruler",
+        "Can","Neck","Snowman","Christmas Tree","Pencil","Boat",
+        "Heart","Frying Pan","Road","Cake","Mushroom","Apple",
+        "Teeth","Kite","Watch","Cat","Office Building","Beard",
+        "Envelope","Gun","Swimming Pool","Toothbrush","Bridge","Moon",
+        "Hot Air Balloon","Top Hat","Elbow","Shark","Oar","Nail",
+        "Basket","Window","French Fries","Sunflower","Cover","Plate",
+        "Lollipop","Horn","Toe","Ear","Saturn","Canoe",
+        "Nose","Wheel","Foot","Wine Glass","Clock","Pineapple",
+        "Golf Club","Necktie","Banana","Flowerpot","Soccer Ball","Church",
+        "Pig","Pants","Bicycle","Leaf","Fish","Snake",
+        "Bowling Ball","Clouds","Moustache","Alligator","Table","Daisy",
+        "Ring","Ice Cubes","Umbrella","Ladder","Fingernail","Skirt",
+        "Chair","Knife","Dog","Rollerblades","Camel","Axe",
+        "Water","Knee","Chimney","Paw","Bird","Lemon",
+        "Flag","Caterpillar","Lightning","Button","Hand","Fire",
+        "Bone","Light Bulb","Cup","Rain Drop","Butterfly","Turtle",
+        "Ice Cream Cone","Candle","Airplane","Swordfish","Comb","Bread",
+        "Mitten","Horse","Tongue","Egg","Saw","Belly Button",
+        "Wheelchair","Fork","Banjo","Sun","Doorknob","Car",
+
+
+
+    ];
+
+
+    function easy() {
+        down.innerHTML =
+            arr[Math.floor(Math.random() * arr.length)];
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Drawing</title>
+
+    <style>
+
+        body{
+            text-align: center;
+        }
+    button {
+    font-family: "helvetica", sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: white;
+    background-color: dimgrey;
+    text-align: center;
+    padding: 14px 20px;
+    border-radius: 8px;
+    border: 0px solid black;
+    outline: none;
+    box-shadow: 0 3px lightgrey;
+    z-index: 1000;
+    margin-top: 50px;
+    }
+
+        button:active {
+            background-color: #33a6cc;
+            box-shadow: none;
+            transform: translateY(3px);
+            z-index: 1000;
+        }
+
+        #easy {
+background-color: #74B14E;
+            font-family: "Comic Sans MS";
+        }
+
+        #hard {
+            font-family: Papyrus;
+            background-color: #D5212E;
+        }
+
+    </style>
+
+</head>
+<body>
+<button id="easy" onclick="window.location.href='easy.html'">
+    EASY WORDS
+</button>
+<br>
+<button id="hard" onclick="window.location.href='hard.html'">
+    HARD WORDS
+</button>
+
+</body>
+</html>
